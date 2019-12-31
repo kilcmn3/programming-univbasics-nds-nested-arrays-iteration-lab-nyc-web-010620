@@ -47,14 +47,19 @@ def total_even_pairs(src)
   # this!
   total = 0;
   row_index = 0;
-  # while row_index < src.count do
+  while row_index < src.count do
     element_index = 0
     even_number = src[row_index][element_index] % 2
-  #   while element_index < src[row_index].count do
-  #     even_number == 1 ? element_index +=1 : total += even_number
-  #   end
-  #   row_index += 1
-  #   end
+    while element_index < src[row_index].count do
+      if even_number == 0 do
+        total += even_number
+      else
+        element_index += 1
+      end
+      end
+
+    row_index += 1
+    end
   puts even_number
   return total
 end
