@@ -25,7 +25,7 @@ def find_greater_pair(src)
   # that are in the inner Arrays
   new_array = []
   row_index = 0
-  while do row_index < src.count do
+  while row_index < src.count do
     element_index = 0;
     first_element_number = src[row_index][element_index]
     second_element_number = src[row_index][element_index + 1]
