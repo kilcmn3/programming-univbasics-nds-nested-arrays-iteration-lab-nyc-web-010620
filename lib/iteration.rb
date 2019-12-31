@@ -13,7 +13,7 @@ def join_ingredients(src)
     element_index = 0
     topping_ingridient1 = src[row_index][element_index]
     topping_ingridient2 = src[row_index][element_index + 1]
-      new_array << Array.new(2, "I love #{topping_ingridient1} and #{topping_ingridient2} on my pizza")
+      new_array << Array.new("I love #{topping_ingridient1} and #{topping_ingridient2} on my pizza")
       row_index +=1
   end
 return new_array
