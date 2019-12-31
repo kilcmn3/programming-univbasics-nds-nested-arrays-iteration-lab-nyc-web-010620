@@ -32,7 +32,9 @@ def find_greater_pair(src)
     new_array << Array.new(src[row_index].max { |first_element_number, second_element_number| first_element_number <=> second_element_number })
 
   end
+  row_index +=1
   end
+  return new_array
 end
 
 def total_even_pairs(src)
