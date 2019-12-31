@@ -27,10 +27,11 @@ def find_greater_pair(src)
   new_array = []
   row_index = 0
   while row_index < src.count do
-    element_index = 0;
-    first_element_number = src[row_index][element_index]
-    second_element_number = src[row_index][element_index + 1]
-    new_array << Array.new(src[row_index].max { |first_element_number, second_element_number| first_element_number <=> second_element_number })
+
+    first_element_number = src[row_index][0]
+    second_element_number = src[row_index][1]
+    max_number =  src[row_index].max { |first_element_number, second_element_number| first_element_number <=> second_element_number }
+    new_array << max_number
     row_index +=1
   end
   return new_array
