@@ -45,4 +45,14 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
+  total = 0;
+  row_index = 0;
+  while row_index < src.count do
+    element_index = 0
+    even_number = src[row_index][element_index] % 2
+    while element_index < src[row_index].count do
+      even_number != 0 ? element_index +=1 : total += even_number
+    end
+    end
+  end
 end
