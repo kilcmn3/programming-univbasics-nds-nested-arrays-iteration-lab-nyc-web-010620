@@ -55,5 +55,5 @@ def total_even_pairs(src)
     end
     row_index
     end
-  return totla
+  return total
 end
