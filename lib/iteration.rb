@@ -30,9 +30,8 @@ def find_greater_pair(src)
     first_element_number = src[row_index][element_index]
     second_element_number = src[row_index][element_index + 1]
     new_array << Array.new(src[row_index].max { |first_element_number, second_element_number| first_element_number <=> second_element_number })
-
+    row_index +=1
   end
-  row_index +=1
   return new_array
 end
 
