@@ -16,7 +16,7 @@ def join_ingredients(src)
       new_array << Array.new(2, "I love #{topping_ingridient1} and #{topping_ingridient2} on my pizza")
       row_index +=1
   end
-puts new_array
+return new_array
 end
 
 def find_greater_pair(src)
